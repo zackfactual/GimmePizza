@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gimme Pizza! P-I-Z-Z-A</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/gimmePizza.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+        <!-- ORDER FORM -->
+        <div id="order-form">  
+            <h1>Gimme Pizza!</h1>
+            
+            <!-- SIZES -->
+            <div class="container">
+                <h4>Decide your size!</h4>
+                <p>Personal ($6), Medium ($10), Large ($14), or Extra Large ($16)</p>
+                <form>
+                    <label class="radio-inline">
+                        <input id="personal" type="radio" name="optradio" checked>Personal
+                    </label>
+                    <label class="radio-inline">
+                        <input id="medium" type="radio" name="optradio">Medium
+                    </label>
+                    <label class="radio-inline">
+                        <input id="large" type="radio" name="optradio">Large
+                    </label>
+                    <label class="radio-inline">
+                        <input id="extraLarge" type="radio" name="optradio">Extra Large
+                    </label>
+                </form>
+            </div>
+            <!-- /SIZE -->
+
+            <!-- CRUST -->
+            <div class="container">
+                <h4>Pick your crust!</h4>
+                <p>Only $3 for our world famous cheese stuffed crust!</p>
+                <form>
+                    <label class="radio-inline">
+                        <input id="plain" type="radio" name="optradio" checked>Plain
+                    </label>
+                    <label class="radio-inline">
+                        <input id="garlicButter" type="radio" name="optradio">Garlic Butter
+                    </label>
+                    <label class="radio-inline">
+                        <input id="cheeseStuffed" type="radio" name="optradio">Cheese Stuffed
+                    </label>
+                    <label class="radio-inline">
+                        <input id="spicy" type="radio" name="optradio">Spicy
+                    </label>
+                    <label class="radio-inline">
+                        <input id="houseSpecial" type="radio" name="optradio">House Special
+                    </label>
+                </form>
+            </div>
+            <!-- /CRUST -->
+
+            <!-- SAUCE -->
+            <div class="container">
+                <h4>Select your sauce!</h4>
+                <p>Try our marinara!</p>
+                <form>
+                    <label class="radio-inline">
+                        <input id="marinara" type="radio" name="optradio" checked>Marinara
+                    </label>
+                    <label class="radio-inline">
+                        <input id="white" type="radio" name="optradio">White
+                    </label>
+                    <label class="radio-inline">
+                        <input id="barbecue" type="radio" name="optradio">Barbecue
+                    </label>
+                    <label class="radio-inline">
+                        <input id="noSauce" type="radio" name="optradio">No Sauce
+                    </label>
+                </form>
+            </div>
+            <!-- /SAUCE -->
+
+            <!-- CHEESE -->
+            <div class="container">
+                <h4>Choose your cheese!</h4>
+                <p>Only $3 for extra cheese!</p>
+                <form>
+                    <label class="radio-inline">
+                        <input id="regularCheese" type="radio" name="optradio" checked>Regular
+                    </label>
+                    <label class="radio-inline">
+                        <input id="noCheese" type="radio" name="optradio">No Cheese
+                    </label>
+                    <label class="radio-inline">
+                        <input id="extraCheese" type="radio" name="optradio">Extra Cheese
+                    </label>
+                </form>
+            </div>
+            <!-- /CHEESE -->
+
+            <!-- VEG -->
+            <div class="container">
+                <h4>Add veg!</h4>
+                <p>First one's on the house, then they're only $1 each!</p>
+                <form id="vegForm">
+                    <label class="checkbox-inline">
+                        <input id="tomatoes" type="checkbox" value="">Tomatoes
+                    </label>
+                    <label class="checkbox-inline">
+                        <input id="onions" type="checkbox" value="">Onions
+                    </label>
+                    <label class="checkbox-inline">
+                        <input id="olives" type="checkbox" value="">Olives
+                    </label>
+                    <label class="checkbox-inline">
+                        <input id="greenPeppers" type="checkbox" value="">Green Peppers
+                    </label>
+                    <label class="checkbox-inline">
+                        <input id="mushrooms" type="checkbox" value="">Mushrooms
+                    </label>
+                    <label class="checkbox-inline">
+                        <input id="pineapple" type="checkbox" value="">Pineapple
+                    </label>
+                    <label class="checkbox-inline">
+                        <input id="spinach" type="checkbox" value="">Spinach
+                    </label>
+                    <label class="checkbox-inline">
+                        <input id="jalapeno" type="checkbox" value="">Jalapeño
+                    </label>
+                </form>
+            </div>
+            <!-- /VEG -->
+
+            <!-- MEAT -->
+            <div class="container">
+                <h4>Add meat!</h4>
+                <p>First one's on the house, then they're only $1 each!</p>
+                <form id="meatForm">
+                    <label class="checkbox-inline">
+                        <input id="pepperoni" type="checkbox" value="">Pepperoni
+                    </label>
+                    <label class="checkbox-inline">
+                        <input id="sausage" type="checkbox" value="">Sausage
+                    </label>
+                    <label class="checkbox-inline">
+                        <input id="canadianBacon" type="checkbox" value="">Canadian Bacon
+                    </label>
+                    <label class="checkbox-inline">
+                        <input id="groundBeef" type="checkbox" value="">Ground Beef
+                    </label>
+                    <label class="checkbox-inline">
+                        <input id="anchovy" type="checkbox" value="">Anchovy
+                    </label>
+                    <label class="checkbox-inline">
+                        <input id="chicken" type="checkbox" value="">Chicken
+                    </label>
+                </form>
+            </div>
+            <!-- /MEAT -->
+            
+            <!-- PLACE ORDER -->
+            <div class="container">
+                <button id="order" type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">Place your order!</button>
+                
+                <!-- RECEIPT MODAL -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Thank you for shopping at Gimme Pizza!</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Here is your itemized receipt: </p>
+                                <div id="size">
+                                    <h5>Size: </h5>
+                                </div>
+                                <div id="crust">
+                                    <br>
+                                    <h5>Crust: </h5>
+                                </div>
+                                <div id="sauce">
+                                    <br>
+                                    <h5>Sauce: </h5>
+                                </div>
+                                <div id="cheese">
+                                    <br>
+                                    <h5>Cheese: </h5>
+                                </div>
+                                <div id="veg">
+                                    <br>
+                                    <h5>Veg: </h5>
+                                </div>
+                                <div id="meat">
+                                    <br>
+                                    <h5>Meat: </h5>
+                                </div>
+                                <div id="total">
+                                    <br>
+                                    <h4>Grand Total: </h4>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="refresh" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /RECEIPT MODAL -->
+                
+            </div>
+            <!-- /PLACE ORDER -->
+            
+        </div>
+        <!-- /ORDER FORM -->
+
+        <script src ="./js/gimmePizza.js"></script>
+        
+    </body>
+</html>
